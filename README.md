@@ -29,7 +29,7 @@ It's an alternative to paid services like Dropbox, WeTransfer.
 
 ![Screenshot](https://raw.githubusercontent.com/psi-4ward/psitransfer/master/docs/psitransfer.gif)
 
-**Demo**: https://transfer.psi.cx
+**Demo**: https://transfer.k0nsl.org
 
 ## Quickstart
 

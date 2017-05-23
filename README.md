@@ -35,12 +35,12 @@ It's an alternative to paid services like Dropbox, WeTransfer.
 
 ### Docker
 ```bash
-$ docker run -p 0.0.0.0:3000:3000 -v $PWD/data:/data psitrax/psitransfer
+$ docker run -p 0.0.0.0:3000:3000 -v $PWD/data:/data k0nsl/psitransfer
 # data volume needs UID 1000
 $ sudo chown -R 1000 $PWD/data 
 ```
 
-Specify the version by using [image tags](https://hub.docker.com/r/psitrax/psitransfer/tags/) e.g.:
+Specify the version by using [image tags](https://hub.docker.com/r/k0nsl/psitransfer/tags/) e.g.:
 * `latest`: corresponds to master branch
 * `1`: latest stable `1.x.x`
 * `1.1`: latest stable `1.1.x`

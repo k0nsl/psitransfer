@@ -35,7 +35,7 @@ It's an alternative to paid services like Dropbox, WeTransfer.
 
 ### Docker
 ```bash
-$ docker run -p 0.0.0.0:3000:3000 -v $PWD/data:/data k0nsl/psitransfer
+$ docker run -d -p 0.0.0.0:3000:3000 -v $PWD/data:/data k0nsl/psitransfer
 # data volume needs UID 1000
 $ sudo chown -R 1000 $PWD/data 
 ```

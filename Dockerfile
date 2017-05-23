@@ -21,7 +21,7 @@ RUN cd app && \
     cd .. && rm -rf app
 
 # Add user
-RUN adduser -s /sbin/nologin transfer01
+RUN adduser -D -s /sbin/nologin transfer01
 
 # Install backend dependencies
 RUN mkdir /data && \

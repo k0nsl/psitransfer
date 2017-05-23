@@ -3,7 +3,7 @@ FROM node:7-alpine
 ENV PSITRANSFER_UPLOAD_DIR=/data \
     NODE_ENV=production
 
-MAINTAINER Christoph Wiechert <wio@psitrax.de>
+MAINTAINER k0nsl <git@k0nsl.org>
 
 WORKDIR /app
 
@@ -11,6 +11,8 @@ ADD *.js package.json README.md /app/
 ADD lib /app/lib
 ADD app /app/app
 ADD public /app/public
+
+RUN apk update && apk upgrade && apk add nano && apk add bash
 
 # Rebuild the frontend apps
 RUN cd app && \
